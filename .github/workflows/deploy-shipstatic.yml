@@ -27,4 +27,4 @@ jobs:
       - name: Deploy to ShipStatic
         uses: shipstatic/action@v1
         with:
-          directory: ./dist
+          path: ./dist
