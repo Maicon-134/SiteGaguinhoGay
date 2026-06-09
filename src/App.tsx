@@ -39,7 +39,6 @@ import {
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { Routes, Route, Link, useParams, useNavigate, useLocation } from 'react-router-dom';
 import freestyleImage from './assets/painel-freestyle.png';
-import fakeLagImage from './assets/painel-fake-lag.png';
 import headtrickImage from './assets/painel-headtrick.png';
 import externalImage from './assets/painel-external.png';
 import internalImage from './assets/painel-internal.png';
@@ -50,7 +49,6 @@ import feedbackImage2 from './assets/feedback-2.png';
 
 const heroYoutubeVideoUrl = 'https://www.youtube.com/embed/k6MJbS7bNxE?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const productYoutubeVideoUrl = 'https://www.youtube.com/embed/lbD7ET65fJ0?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
-const fakeLagYoutubeVideoUrl = 'https://www.youtube.com/embed/TjgJl6XRd6I?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const headtrickYoutubeVideoUrl = 'https://www.youtube.com/embed/K8AHyDBq3nY?start=2&controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const externalYoutubeVideoUrl = 'https://www.youtube.com/embed/lBYpZNKDgyw?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const emulatorYoutubeVideoUrl = 'https://www.youtube.com/embed/KvIZW1ApwtY?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
@@ -115,28 +113,6 @@ const PRODUCTS: Product[] = [
     plans: [
       { name: '30 Dias', price: 24.90, discount: '-65%', url: 'https://go.perfectpay.com.br/PPU38CQ6G80', popular: true },
       { name: 'Permanente', price: 42.90, discount: '-50%', url: 'https://go.perfectpay.com.br/PPU38CQ6G81' }
-    ]
-  },
-  {
-    id: '2',
-    name: 'Painel Fake Lag',
-    description: 'Tecnologia avançada de fake lag para melhorar sua performance e evitar detecções.',
-    longDescription: 'O Painel Fake Lag oferece tecnologia avançada para confundir seus inimigos com movimentos imprevisíveis e precisão absoluta, garantindo segurança total.',
-    price: 36.90,
-    oldPrice: 69.90,
-    image: fakeLagImage,
-    videoUrl: fakeLagYoutubeVideoUrl,
-    category: 'ANDROID',
-    features: [
-      'Teleporte avançado',
-      'Tempo escolhido para o teleporte',
-      '100% Configurável e personalizado',
-      '100% Antiban e Antiblacklist',
-      'Funciona em todas as versões do android',
-      'Funciona em sistema android'
-    ],
-    plans: [
-      { name: '30 Dias', price: 36.90, discount: '-40%', url: 'https://go.perfectpay.com.br/PPU38CQ6G7U', popular: true }
     ]
   },
   {
@@ -211,7 +187,7 @@ const PRODUCTS: Product[] = [
     name: 'PAINEL INTERNAL',
     description: 'Painel interno completo para emuladores com recursos premium e máxima performance.',
     longDescription: 'O PAINEL INTERNAL oferece uma solução completa para emuladores, com recursos premium de Aimbot e ESP, garantindo a máxima performance e segurança.',
-    price: 68.90,
+    price: 36.90,
     oldPrice: 249.90,
     image: internalImage,
     videoUrl: emulatorYoutubeVideoUrl,
@@ -224,10 +200,10 @@ const PRODUCTS: Product[] = [
       '100% Antiban e Antiblacklist'
     ],
     plans: [
-      { name: '1 Dia', price: 19.90, discount: '-90%', url: 'https://go.perfectpay.com.br/PPU38CQ6G82' },
-      { name: '15 Dias', price: 38.90, discount: '-80%', url: 'https://go.perfectpay.com.br/PPU38CQ6G83' },
-      { name: '30 Dias', price: 68.90, discount: '-70%', url: 'https://go.perfectpay.com.br/PPU38CQ6G84', popular: true },
-      { name: 'Permanente', price: 159.90, discount: '-40%', url: 'https://go.perfectpay.com.br/PPU38CQ6G85' }
+      { name: '3 Dias', price: 12.90, discount: '-90%', url: 'https://go.perfectpay.com.br/PPU38CQ6G82' },
+      { name: '7 Dias', price: 24.90, discount: '-80%', url: 'https://go.perfectpay.com.br/PPU38CQ6G83' },
+      { name: '30 Dias', price: 36.90, discount: '-70%', url: 'https://go.perfectpay.com.br/PPU38CQ6G84', popular: true },
+      { name: 'Permanente', price: 99.99, discount: '-40%', url: 'https://go.perfectpay.com.br/PPU38CQ6G85' }
     ]
   },
   {
@@ -249,6 +225,54 @@ const PRODUCTS: Product[] = [
     ],
     plans: [
       { name: 'Consulte', price: 49.99, discount: 'NOVO', url: 'https://go.perfectpay.com.br/PPU38CQ9EMJ', popular: true }
+    ]
+  },
+  {
+    id: '8',
+    name: 'INJETOR DE XIT',
+    description: 'Injetor de xit para Android com instalação rápida e compatibilidade ampla.',
+    longDescription: 'O INJETOR DE XIT para Android permite injetar modificações de forma prática e segura, com suporte contínuo e atualizações frequentes.',
+    price: 29.90,
+    image: freestyleImage,
+    category: 'ANDROID',
+    tag: 'NOVO',
+    features: [
+      '100% Capa',
+      'Escolha um XIT de sua preferência',
+      'Vem holograma',
+      'Melhora sua sensibilidade',
+      'Melhora sua mira',
+      '100% Antiban e antiblacklist',
+      'BYPASS'
+    ],
+    plans: [
+      { name: '7 Dias', price: 19.90, discount: '-30%', url: '#' },
+      { name: '30 Dias', price: 29.90, discount: '-50%', url: '#', popular: true },
+      { name: 'Permanente', price: 59.90, discount: '-40%', url: '#' }
+    ]
+  },
+  {
+    id: '9',
+    name: 'INJETOR DE XIT',
+    description: 'Injetor de xit para iOS com instalação simplificada e máxima compatibilidade.',
+    longDescription: 'O INJETOR DE XIT para iOS oferece uma solução prática para injetar modificações no iPhone, com processo simplificado e suporte completo.',
+    price: 29.90,
+    image: externalImage,
+    category: 'IOS',
+    tag: 'NOVO',
+    features: [
+      '100% Capa',
+      'Escolha um XIT de sua preferência',
+      'Vem holograma',
+      'Melhora sua sensibilidade',
+      'Melhora sua mira',
+      '100% Antiban e antiblacklist',
+      'BYPASS'
+    ],
+    plans: [
+      { name: '7 Dias', price: 19.90, discount: '-30%', url: '#' },
+      { name: '30 Dias', price: 29.90, discount: '-50%', url: '#', popular: true },
+      { name: 'Permanente', price: 59.90, discount: '-40%', url: '#' }
     ]
   }
 ];
