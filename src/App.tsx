@@ -44,6 +44,7 @@ import externalImage from './assets/painel-external.png';
 import internalImage from './assets/painel-internal.png';
 import ffh4xIphoneImage from './assets/painel-ffh4x-iphone.png';
 import hsPescocoXiaomiImage from './assets/hs-pescoco-xiaomi.png';
+import injetorXitImage from './assets/painel-injetor-xit.png';
 import feedbackImage1 from './assets/feedback-1.png';
 import feedbackImage2 from './assets/feedback-2.png';
 
@@ -233,7 +234,7 @@ const PRODUCTS: Product[] = [
     description: 'Injetor de xit para Android com instalação rápida e compatibilidade ampla.',
     longDescription: 'O INJETOR DE XIT para Android permite injetar modificações de forma prática e segura, com suporte contínuo e atualizações frequentes.',
     price: 29.90,
-    image: freestyleImage,
+    image: injetorXitImage,
     category: 'ANDROID',
     tag: 'NOVO',
     features: [
@@ -257,7 +258,7 @@ const PRODUCTS: Product[] = [
     description: 'Injetor de xit para iOS com instalação simplificada e máxima compatibilidade.',
     longDescription: 'O INJETOR DE XIT para iOS oferece uma solução prática para injetar modificações no iPhone, com processo simplificado e suporte completo.',
     price: 29.90,
-    image: externalImage,
+    image: injetorXitImage,
     category: 'IOS',
     tag: 'NOVO',
     features: [
