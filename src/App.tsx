@@ -237,11 +237,13 @@ const PRODUCTS: Product[] = [
     category: 'ANDROID',
     tag: 'NOVO',
     features: [
-      'Injeção rápida e prática',
-      'Compatível com diversos aparelhos Android',
-      'Interface simples e intuitiva',
-      'Atualizações frequentes',
-      'Suporte dedicado'
+      '100% Capa',
+      'Escolha um XIT de sua preferência',
+      'Vem holograma',
+      'Melhora sua sensibilidade',
+      'Melhora sua mira',
+      '100% Antiban e antiblacklist',
+      'BYPASS'
     ],
     plans: [
       { name: '7 Dias', price: 19.90, discount: '-30%', url: '#' },
@@ -259,11 +261,13 @@ const PRODUCTS: Product[] = [
     category: 'IOS',
     tag: 'NOVO',
     features: [
-      'Injeção simplificada para iPhone',
-      'Compatível com diversas versões do iOS',
-      'Interface fácil de usar',
-      'Atualizações frequentes',
-      'Suporte dedicado'
+      '100% Capa',
+      'Escolha um XIT de sua preferência',
+      'Vem holograma',
+      'Melhora sua sensibilidade',
+      'Melhora sua mira',
+      '100% Antiban e antiblacklist',
+      'BYPASS'
     ],
     plans: [
       { name: '7 Dias', price: 19.90, discount: '-30%', url: '#' },
