@@ -35,21 +35,13 @@ Depois do build, envie para a Hostinger tudo que estiver dentro de `dist/`:
 
 O repositório inclui um workflow que faz o deploy automaticamente ao enviar alterações para a branch `main`.
 
-### Ativar o GitHub Pages (uma vez — passo obrigatório)
-
-O deploy automático já envia o site compilado para a branch `gh-pages`.  
-Falta apenas **ativar** o GitHub Pages no repositório:
+### Ativar o GitHub Pages (uma vez)
 
 1. Abra: https://github.com/Maicon-134/SiteGaguinhoGay/settings/pages
-2. Em **Build and deployment → Source**, escolha **Deploy from a branch**
-3. Em **Branch**, selecione `gh-pages` e pasta `/ (root)`
-4. Clique em **Save**
+2. Em **Source**, escolha **GitHub Actions**
+3. O deploy roda automaticamente a cada push na `main`
 
-Aguarde 1–2 minutos. O site ficará em:
-
-`https://maicon-134.github.io/SiteGaguinhoGay/`
-
-> **Nota:** O repositório é privado. GitHub Pages em repositórios privados exige plano pago (Pro/Team). Se não tiver plano pago, torne o repositório **público** em Settings → General → Danger Zone → Change visibility.
+Site: `https://maicon-134.github.io/SiteGaguinhoGay/`
 
 ### Por que não funcionava antes?
 
