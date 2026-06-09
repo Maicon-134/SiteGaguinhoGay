@@ -44,6 +44,7 @@ import externalImage from './assets/painel-external.png';
 import internalImage from './assets/painel-internal.png';
 import ffh4xIphoneImage from './assets/painel-ffh4x-iphone.png';
 import hsPescocoXiaomiImage from './assets/hs-pescoco-xiaomi.png';
+import hsProxyAndroidImage from './assets/painel-hs-proxy-android.png';
 import injetorXitImage from './assets/painel-injetor-xit.png';
 import feedbackImage1 from './assets/feedback-1.png';
 import feedbackImage2 from './assets/feedback-2.png';
@@ -278,7 +279,7 @@ const PRODUCTS: Product[] = [
     description: 'Proxy de HS para Android com múltiplas opções de headshot e holograma incluso.',
     longDescription: 'O HS PROXY ANDROID oferece configurações avançadas de headshot para Android, com opções de cabeça, pescoço e peito, além de holograma incluso.',
     price: 32.90,
-    image: hsPescocoXiaomiImage,
+    image: hsProxyAndroidImage,
     category: 'ANDROID',
     tag: 'NOVO',
     features: [
