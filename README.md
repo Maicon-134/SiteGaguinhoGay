@@ -1,28 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# HiagoXiter STORE
 
-# Run and deploy your AI Studio app
+Site de vendas da loja HiagoXiter STORE (React + Vite).
 
-This contains everything you need to run your app locally.
+## Rodar localmente
 
-View your app in AI Studio: https://ai.studio/apps/f8365ecb-47d7-40a0-ba8a-0ecb3d05bf97
+**Pré-requisito:** Node.js 20+
 
-## Run Locally
+```bash
+npm install
+npm run dev
+```
 
-**Prerequisites:**  Node.js
+O site abre em `http://localhost:3000`.
 
+No Windows, você também pode usar `dev-auto-reload.bat`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Publicar na Hostinger
 
-## Windows shortcut
+Na Hostinger, o site funciona quando você envia **apenas o conteúdo da pasta `dist`** para `public_html` (não envie o código-fonte inteiro).
 
-If you are on Windows, you can also start the project with:
+```bash
+npm install
+npm run build:hostinger
+```
 
-`dev-auto-reload.bat`
+Depois do build, envie para a Hostinger tudo que estiver dentro de `dist/`:
 
-This script checks Node.js, installs dependencies on first run, clears port `3000`, opens the browser, and starts the Vite dev server with automatic reload enabled.
+- `index.html`
+- `404.html`
+- pasta `assets/`
+- `.htaccess` (para as rotas `/produtos/...` funcionarem)
+
+## Publicar no GitHub Pages
+
+O repositório inclui um workflow que faz o deploy automaticamente ao enviar alterações para a branch `main`.
+
+### Ativar o GitHub Pages (uma vez)
+
+1. Abra o repositório no GitHub
+2. Vá em **Settings** → **Pages**
+3. Em **Source**, escolha **GitHub Actions**
+4. Faça push na branch `main` (ou execute o workflow manualmente em **Actions**)
+
+O site ficará disponível em:
+
+`https://maicon-134.github.io/SiteGaguinhoGay/`
+
+### Por que não funcionava antes?
+
+Este projeto é um app React compilado com Vite. O arquivo `index.html` na raiz do repositório é só para desenvolvimento local — ele tenta carregar `/src/main.tsx`, que não funciona em hospedagem estática.
+
+Na Hostinger você provavelmente já enviou a pasta `dist` compilada. No GitHub, é preciso:
+
+1. Compilar o projeto (`npm run build`)
+2. Publicar a pasta `dist` (feito automaticamente pelo GitHub Actions)
+3. Usar o caminho base `/SiteGaguinhoGay/` nos assets (já configurado em `build:pages`)
