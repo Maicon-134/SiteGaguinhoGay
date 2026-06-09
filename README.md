@@ -2,6 +2,13 @@
 
 Site de vendas da loja HiagoXiter STORE (React + Vite).
 
+## Site ao vivo
+
+**https://melded-frame-i3n74nl.shipstatic.com**
+
+Para manter o site permanentemente (grátis), acesse o link de claim:
+https://my.shipstatic.com/claim/a124fef3dca77b64669cefdcaa95108f6377eb5101d9fbb547cd4f8c0548fa97
+
 ## Rodar localmente
 
 **Pré-requisito:** Node.js 20+
