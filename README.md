@@ -1,64 +1,43 @@
 # HiagoXiter STORE
 
-Site de vendas da loja HiagoXiter STORE (React + Vite).
+Site da loja **hiagoxiter.com** (React + Vite).
 
-## Site ao vivo
+## Problema atual na Hostinger
 
-**https://melded-frame-i3n74nl.shipstatic.com**
+O domínio **hiagoxiter.com** está com o arquivo errado. Foi enviado o código-fonte em vez do site compilado.
 
-Para manter o site permanentemente (grátis), acesse o link de claim:
-https://my.shipstatic.com/claim/a124fef3dca77b64669cefdcaa95108f6377eb5101d9fbb547cd4f8c0548fa97
+| Errado (código-fonte) | Correto (site compilado) |
+|-----------------------|--------------------------|
+| `src="/src/main.tsx"` | `src="/assets/index-xxxxx.js"` |
 
-## Rodar localmente
+## Atualizar na Hostinger
 
-**Pré-requisito:** Node.js 20+
+### Opção A — Baixar ZIP pronto (mais fácil)
 
-```bash
-npm install
-npm run dev
-```
+1. Baixe: https://github.com/Maicon-134/SiteGaguinhoGay/archive/refs/heads/hostinger.zip
+2. Extraia o ZIP
+3. No **hPanel** → **hiagoxiter.com** → **Gerenciador de arquivos** → `public_html`
+4. **Apague tudo** que está em `public_html`
+5. Envie o conteúdo extraído do ZIP (index.html, 404.html, .htaccess, pasta assets)
 
-O site abre em `http://localhost:3000`.
+### Opção B — Git na Hostinger
 
-No Windows, você também pode usar `dev-auto-reload.bat`.
+A branch **`hostinger`** é atualizada automaticamente a cada push na `main`.
 
-## Publicar na Hostinger
+No hPanel, conecte o repositório GitHub e use a branch **`hostinger`** (não `main`).
 
-Na Hostinger, o site funciona quando você envia **apenas o conteúdo da pasta `dist`** para `public_html` (não envie o código-fonte inteiro).
+### Opção C — Build local
 
 ```bash
 npm install
 npm run build:hostinger
 ```
 
-Depois do build, envie para a Hostinger tudo que estiver dentro de `dist/`:
+Envie tudo de `dist/` para `public_html`.
 
-- `index.html`
-- `404.html`
-- pasta `assets/`
-- `.htaccess` (para as rotas `/produtos/...` funcionarem)
+## Rodar localmente
 
-## Publicar no GitHub Pages
-
-O repositório inclui um workflow que faz o deploy automaticamente ao enviar alterações para a branch `main`.
-
-### Ativar o GitHub Pages (uma vez — 30 segundos)
-
-O site compilado é publicado automaticamente na branch `gh-pages`.
-
-1. Abra: https://github.com/Maicon-134/SiteGaguinhoGay/settings/pages
-2. Em **Build and deployment → Source**, escolha **Deploy from a branch**
-3. Branch: **`gh-pages`** | Pasta: **`/ (root)`**
-4. Clique em **Save**
-
-Site: `https://maicon-134.github.io/SiteGaguinhoGay/`
-
-### Por que não funcionava antes?
-
-Este projeto é um app React compilado com Vite. O arquivo `index.html` na raiz do repositório é só para desenvolvimento local — ele tenta carregar `/src/main.tsx`, que não funciona em hospedagem estática.
-
-Na Hostinger você provavelmente já enviou a pasta `dist` compilada. No GitHub, é preciso:
-
-1. Compilar o projeto (`npm run build`)
-2. Publicar a pasta `dist` (feito automaticamente pelo GitHub Actions)
-3. Usar o caminho base `/SiteGaguinhoGay/` nos assets (já configurado em `build:pages`)
+```bash
+npm install
+npm run dev
+```

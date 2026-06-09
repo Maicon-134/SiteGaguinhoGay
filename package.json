@@ -8,6 +8,7 @@
     "build": "vite build && cp dist/index.html dist/404.html",
     "build:pages": "VITE_BASE_PATH=/SiteGaguinhoGay/ vite build && cp dist/index.html dist/404.html",
     "build:hostinger": "vite build && cp dist/index.html dist/404.html",
+    "package:hostinger": "npm run build:hostinger && cd dist && zip -r ../hostinger-upload.zip . && cd .. && echo 'Pronto: hostinger-upload.zip'",
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit"
