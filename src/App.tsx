@@ -233,7 +233,7 @@ const PRODUCTS: Product[] = [
     name: 'INJETOR DE XIT',
     description: 'Injetor de xit para Android com instalação rápida e compatibilidade ampla.',
     longDescription: 'O INJETOR DE XIT para Android permite injetar modificações de forma prática e segura, com suporte contínuo e atualizações frequentes.',
-    price: 29.90,
+    price: 32.90,
     image: injetorXitImage,
     category: 'ANDROID',
     tag: 'NOVO',
@@ -247,9 +247,7 @@ const PRODUCTS: Product[] = [
       'BYPASS'
     ],
     plans: [
-      { name: '7 Dias', price: 19.90, discount: '-30%', url: '#' },
-      { name: '30 Dias', price: 29.90, discount: '-50%', url: '#', popular: true },
-      { name: 'Permanente', price: 59.90, discount: '-40%', url: '#' }
+      { name: 'Permanente', price: 32.90, discount: '-40%', url: '#', popular: true }
     ]
   },
   {
@@ -257,7 +255,7 @@ const PRODUCTS: Product[] = [
     name: 'INJETOR DE XIT',
     description: 'Injetor de xit para iOS com instalação simplificada e máxima compatibilidade.',
     longDescription: 'O INJETOR DE XIT para iOS oferece uma solução prática para injetar modificações no iPhone, com processo simplificado e suporte completo.',
-    price: 29.90,
+    price: 32.90,
     image: injetorXitImage,
     category: 'IOS',
     tag: 'NOVO',
@@ -271,9 +269,7 @@ const PRODUCTS: Product[] = [
       'BYPASS'
     ],
     plans: [
-      { name: '7 Dias', price: 19.90, discount: '-30%', url: '#' },
-      { name: '30 Dias', price: 29.90, discount: '-50%', url: '#', popular: true },
-      { name: 'Permanente', price: 59.90, discount: '-40%', url: '#' }
+      { name: 'Permanente', price: 32.90, discount: '-40%', url: '#', popular: true }
     ]
   }
 ];
