@@ -271,6 +271,26 @@ const PRODUCTS: Product[] = [
     plans: [
       { name: 'Permanente', price: 32.90, discount: '-40%', url: '#', popular: true }
     ]
+  },
+  {
+    id: '10',
+    name: 'HS PROXY ANDROID',
+    description: 'Proxy de HS para Android com múltiplas opções de headshot e holograma incluso.',
+    longDescription: 'O HS PROXY ANDROID oferece configurações avançadas de headshot para Android, com opções de cabeça, pescoço e peito, além de holograma incluso.',
+    price: 32.90,
+    image: hsPescocoXiaomiImage,
+    category: 'ANDROID',
+    tag: 'NOVO',
+    features: [
+      '100% HS',
+      'HS CABEÇA',
+      'HS PESCOÇO',
+      'HS PEITO',
+      'VEM COM HOLOGRAMA'
+    ],
+    plans: [
+      { name: 'Permanente', price: 32.90, discount: '-40%', url: '#', popular: true }
+    ]
   }
 ];
 
