@@ -2,7 +2,7 @@ name: Deploy Hostinger
 
 on:
   push:
-    branches: [main]
+    branches: [develop]
   workflow_dispatch:
 
 permissions:
@@ -18,6 +18,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: develop
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,10 +33,10 @@ jobs:
       - name: Build for Hostinger
         run: npm run build:hostinger
 
-      - name: Publish to hostinger branch
+      - name: Publish to main branch (Hostinger)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          publish_branch: hostinger
+          publish_branch: main
           force_orphan: true

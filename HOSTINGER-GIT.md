@@ -1,34 +1,26 @@
-# Configurar Git na Hostinger (hiagoxiter.com)
+# Git na Hostinger (hiagoxiter.com)
 
-## Configuração correta no hPanel
+## Configuração no hPanel
 
-1. Abra **hPanel** → pesquise **Git**
-2. Selecione o domínio **hiagoxiter.com**
-3. Configure assim:
-
-| Campo | Valor correto |
-|-------|---------------|
+| Campo | Valor |
+|-------|-------|
 | Repositório | `Maicon-134/SiteGaguinhoGay` |
-| Branch | **`hostinger`** (NÃO use `main`) |
+| Branch | **`main`** |
 | Diretório | **`public_html`** |
 
-4. Clique em **Deploy** ou **Redeploy**
-5. Ative **Auto Deployment**
+Clique em **Deploy** ou **Redeploy** e ative **Auto Deployment**.
 
-## Se aparecer erro 403
+## Como funciona
 
-Significa que `public_html` está vazio. Faça:
+- Branch **`main`** = site compilado (vai para a Hostinger)
+- Branch **`develop`** = código-fonte (edite aqui)
 
-1. No Git do hPanel, confirme branch **`hostinger`**
-2. Clique em **Redeploy**
-3. No hPanel, pesquise **Fix File Ownership** e execute
-4. Verifique no Gerenciador de arquivos se existem:
-   - `public_html/index.html`
-   - `public_html/assets/`
+A cada push na `develop`, o GitHub compila e atualiza a `main` automaticamente.
 
-## Branch errada = site quebrado
+## Erro 403
 
-| Branch | O que acontece |
-|--------|----------------|
-| `main` | Código-fonte (não funciona) |
-| `hostinger` | Site compilado (correto) |
+`public_html` está vazio. Clique em **Redeploy** no Git do hPanel.
+
+## Erro: página em branco com /src/main.tsx
+
+A branch errada estava selecionada. Use sempre **`main`**.
