@@ -41,6 +41,7 @@ import { Routes, Route, Link, useParams, useNavigate, useLocation } from 'react-
 import freestyleImage from './assets/painel-freestyle.png';
 import headtrickImage from './assets/painel-headtrick.png';
 import externalImage from './assets/painel-external.png';
+import fluoriteImage from './assets/painel-fluorite.png';
 import internalImage from './assets/painel-internal.png';
 import ffh4xIphoneImage from './assets/painel-ffh4x-iphone.png';
 import hsProxyAndroidImage from './assets/painel-hs-proxy-android.png';
@@ -276,7 +277,7 @@ const PRODUCTS: Product[] = [
     description: 'Painel exclusivo para iOS com recursos avançados e máxima performance.',
     longDescription: 'O PAINEL FLUORITE oferece uma solução completa para iPhone, com recursos avançados de Aimbot e ESP, garantindo a máxima performance e segurança.',
     price: 29.99,
-    image: externalImage,
+    image: fluoriteImage,
     category: 'IOS',
     tag: 'NOVO',
     features: [
