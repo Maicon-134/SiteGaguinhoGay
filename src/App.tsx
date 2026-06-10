@@ -281,10 +281,14 @@ const PRODUCTS: Product[] = [
     category: 'IOS',
     tag: 'NOVO',
     features: [
-      'Aimbot 100% e Aimbot Neck',
-      'ESP Linha, caixa, vida e nome',
-      'Calibração avançada',
-      '100% Antiban e Antiblacklist'
+      'Aimbot 100%',
+      'Aimlock 100%',
+      'Aimfov 100%',
+      'No-Recoil 100%',
+      'ESP (Line,Box,Name,Life)',
+      'AimPrecision',
+      'Headtrick',
+      '+6 Bonus'
     ],
     plans: [
       { name: '1 Dia', price: 19.99, discount: '-85%', url: '#' },
