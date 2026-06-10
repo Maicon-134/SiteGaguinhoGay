@@ -55,6 +55,7 @@ const headtrickYoutubeVideoUrl = 'https://www.youtube.com/embed/K8AHyDBq3nY?star
 const externalYoutubeVideoUrl = 'https://www.youtube.com/embed/lBYpZNKDgyw?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const emulatorYoutubeVideoUrl = 'https://www.youtube.com/embed/KvIZW1ApwtY?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const ffh4xIphoneYoutubeVideoUrl = 'https://www.youtube.com/embed/-wOoJMLEGcY?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
+const hsProxyAndroidYoutubeVideoUrl = 'https://www.youtube.com/embed/k7bj73eF6DM?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 
 // --- Types ---
 
@@ -258,6 +259,8 @@ const PRODUCTS: Product[] = [
     longDescription: 'O HS PROXY ANDROID oferece configurações avançadas de headshot para Android, com opções de cabeça, pescoço e peito, além de holograma incluso.',
     price: 29.99,
     image: hsProxyAndroidImage,
+    videoUrl: hsProxyAndroidYoutubeVideoUrl,
+    videoWatchUrl: 'https://www.youtube.com/watch?v=k7bj73eF6DM',
     category: 'ANDROID',
     tag: 'NOVO',
     features: [
