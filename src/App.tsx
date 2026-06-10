@@ -137,7 +137,7 @@ const PRODUCTS: Product[] = [
       'Funciona em sistema android'
     ],
     plans: [
-      { name: 'Permanente', price: 19.99, discount: '-50%', url: 'https://entregador.store/c/freestyle2', popular: true }
+      { name: 'Permanente', price: 19.99, discount: '-50%', url: 'https://entregador.store/c/headtrick1', popular: true }
     ]
   },
   {
