@@ -112,8 +112,8 @@ const PRODUCTS: Product[] = [
       'Funciona em sistema android'
     ],
     plans: [
-      { name: '30 Dias', price: 24.90, discount: '-65%', url: 'https://go.perfectpay.com.br/PPU38CQ6G80', popular: true },
-      { name: 'Permanente', price: 42.90, discount: '-50%', url: 'https://go.perfectpay.com.br/PPU38CQ6G81' }
+      { name: '30 Dias', price: 24.90, discount: '-65%', url: 'https://entregador.store/c/freestyle1', popular: true },
+      { name: 'Permanente', price: 42.90, discount: '-50%', url: 'https://entregador.store/c/freestyle2' }
     ]
   },
   {
@@ -137,7 +137,7 @@ const PRODUCTS: Product[] = [
       'Funciona em sistema android'
     ],
     plans: [
-      { name: 'Permanente', price: 19.99, discount: '-50%', url: 'https://go.perfectpay.com.br/PPU38CQ9EMD', popular: true }
+      { name: 'Permanente', price: 19.99, discount: '-50%', url: 'https://entregador.store/c/freestyle2', popular: true }
     ]
   },
   {
@@ -157,7 +157,7 @@ const PRODUCTS: Product[] = [
       '100% Antiban e Antiblacklist'
     ],
     plans: [
-      { name: '30 Dias', price: 29.99, discount: '-77%', url: 'https://go.perfectpay.com.br/PPU38CQ6G86', popular: true }
+      { name: 'Permanente', price: 29.99, discount: '-77%', url: 'https://entregador.store/c/scriptable1', popular: true }
     ]
   },
   {
@@ -178,9 +178,9 @@ const PRODUCTS: Product[] = [
       'No Recoil 100%'
     ],
     plans: [
-      { name: '1 Dia', price: 19.99, discount: '-85%', url: 'https://go.perfectpay.com.br/PPU38CQ9EMF' },
-      { name: '7 Dias', price: 29.99, discount: '-75%', url: 'https://go.perfectpay.com.br/PPU38CQ9EMH' },
-      { name: '30 Dias', price: 49.99, discount: '-65%', url: 'https://go.perfectpay.com.br/PPU38CQ9EMI', popular: true }
+      { name: '1 Dia', price: 19.99, discount: '-85%', url: 'https://entregador.store/c/ffh4x1' },
+      { name: '7 Dias', price: 29.99, discount: '-75%', url: 'https://entregador.store/c/ffh4x2' },
+      { name: '30 Dias', price: 49.99, discount: '-65%', url: 'https://entregador.store/c/ffh4x3', popular: true }
     ]
   },
   {
@@ -201,10 +201,10 @@ const PRODUCTS: Product[] = [
       '100% Antiban e Antiblacklist'
     ],
     plans: [
-      { name: '3 Dias', price: 12.90, discount: '-90%', url: 'https://go.perfectpay.com.br/PPU38CQ6G82' },
-      { name: '7 Dias', price: 24.90, discount: '-80%', url: 'https://go.perfectpay.com.br/PPU38CQ6G83' },
-      { name: '30 Dias', price: 36.90, discount: '-70%', url: 'https://go.perfectpay.com.br/PPU38CQ6G84', popular: true },
-      { name: 'Permanente', price: 99.99, discount: '-40%', url: 'https://go.perfectpay.com.br/PPU38CQ6G85' }
+      { name: '3 Dias', price: 12.90, discount: '-90%', url: 'https://entregador.store/c/emulador1' },
+      { name: '7 Dias', price: 24.90, discount: '-80%', url: 'https://entregador.store/c/emulador2' },
+      { name: '30 Dias', price: 36.90, discount: '-70%', url: 'https://entregador.store/c/emulador3', popular: true },
+      { name: 'Permanente', price: 99.99, discount: '-40%', url: 'https://entregador.store/c/emulador4' }
     ]
   },
   {
@@ -226,7 +226,7 @@ const PRODUCTS: Product[] = [
       'BYPASS'
     ],
     plans: [
-      { name: 'Permanente', price: 32.90, discount: '-40%', url: '#', popular: true }
+      { name: 'Permanente', price: 32.90, discount: '-40%', url: 'https://entregador.store/c/injetor1', popular: true }
     ]
   },
   {
@@ -248,7 +248,7 @@ const PRODUCTS: Product[] = [
       'BYPASS'
     ],
     plans: [
-      { name: 'Permanente', price: 32.90, discount: '-40%', url: '#', popular: true }
+      { name: 'Permanente', price: 32.90, discount: '-40%', url: 'https://entregador.store/c/injetor1', popular: true }
     ]
   },
   {
@@ -268,7 +268,7 @@ const PRODUCTS: Product[] = [
       'VEM COM HOLOGRAMA'
     ],
     plans: [
-      { name: 'Permanente', price: 29.99, discount: '-40%', url: '#', popular: true }
+      { name: 'Permanente', price: 29.99, discount: '-40%', url: 'https://entregador.store/c/proxy', popular: true }
     ]
   },
   {
@@ -291,9 +291,9 @@ const PRODUCTS: Product[] = [
       '+6 Bonus'
     ],
     plans: [
-      { name: '1 Dia', price: 19.99, discount: '-85%', url: '#' },
-      { name: '7 Dias', price: 29.99, discount: '-75%', url: '#' },
-      { name: '30 Dias', price: 49.99, discount: '-65%', url: '#', popular: true }
+      { name: '1 Dia', price: 19.99, discount: '-85%', url: 'https://entregador.store/c/fluorite1' },
+      { name: '7 Dias', price: 29.99, discount: '-75%', url: 'https://entregador.store/c/fluorite2' },
+      { name: '30 Dias', price: 49.99, discount: '-65%', url: 'https://entregador.store/c/fluorite3', popular: true }
     ]
   }
 ];
