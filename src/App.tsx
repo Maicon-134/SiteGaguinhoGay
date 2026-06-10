@@ -43,7 +43,6 @@ import headtrickImage from './assets/painel-headtrick.png';
 import externalImage from './assets/painel-external.png';
 import internalImage from './assets/painel-internal.png';
 import ffh4xIphoneImage from './assets/painel-ffh4x-iphone.png';
-import hsPescocoXiaomiImage from './assets/hs-pescoco-xiaomi.png';
 import hsProxyAndroidImage from './assets/painel-hs-proxy-android.png';
 import injetorXitImage from './assets/painel-injetor-xit.png';
 import feedbackImage1 from './assets/feedback-1.png';
@@ -55,7 +54,6 @@ const headtrickYoutubeVideoUrl = 'https://www.youtube.com/embed/K8AHyDBq3nY?star
 const externalYoutubeVideoUrl = 'https://www.youtube.com/embed/lBYpZNKDgyw?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const emulatorYoutubeVideoUrl = 'https://www.youtube.com/embed/KvIZW1ApwtY?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const ffh4xIphoneYoutubeVideoUrl = 'https://www.youtube.com/embed/-wOoJMLEGcY?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
-const hsPescocoXiaomiYoutubeVideoUrl = 'https://www.youtube.com/embed/S-asLYxJ8vs?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 
 // --- Types ---
 
@@ -206,27 +204,6 @@ const PRODUCTS: Product[] = [
       { name: '7 Dias', price: 24.90, discount: '-80%', url: 'https://go.perfectpay.com.br/PPU38CQ6G83' },
       { name: '30 Dias', price: 36.90, discount: '-70%', url: 'https://go.perfectpay.com.br/PPU38CQ6G84', popular: true },
       { name: 'Permanente', price: 99.99, discount: '-40%', url: 'https://go.perfectpay.com.br/PPU38CQ6G85' }
-    ]
-  },
-  {
-    id: '7',
-    name: 'HS PESCOÇO XIAOMI',
-    description: 'Configuração otimizada para Xiaomi com foco em HS no pescoço e melhor resposta em jogo.',
-    longDescription: 'O HS PESCOÇO XIAOMI foi pensado para entregar uma configuração otimizada em aparelhos Xiaomi, com foco em precisão, sensibilidade e resposta rápida para melhorar sua performance nas partidas.',
-    price: 49.99,
-    image: hsPescocoXiaomiImage,
-    videoUrl: hsPescocoXiaomiYoutubeVideoUrl,
-    videoWatchUrl: 'https://www.youtube.com/watch?v=S-asLYxJ8vs',
-    category: 'ANDROID',
-    tag: 'NOVO',
-    features: [
-      'Otimizado para aparelhos Xiaomi',
-      'Foco em HS no pescoço',
-      'Melhor resposta de sensibilidade',
-      'Configuração prática e rápida'
-    ],
-    plans: [
-      { name: 'Consulte', price: 49.99, discount: 'NOVO', url: 'https://go.perfectpay.com.br/PPU38CQ9EMJ', popular: true }
     ]
   },
   {
