@@ -276,7 +276,7 @@ const PRODUCTS: Product[] = [
     name: 'PAINEL FLUORITE',
     description: 'Painel exclusivo para iOS com recursos avançados e máxima performance.',
     longDescription: 'O PAINEL FLUORITE oferece uma solução completa para iPhone, com recursos avançados de Aimbot e ESP, garantindo a máxima performance e segurança.',
-    price: 29.99,
+    price: 49.99,
     image: fluoriteImage,
     category: 'IOS',
     tag: 'NOVO',
@@ -287,7 +287,9 @@ const PRODUCTS: Product[] = [
       '100% Antiban e Antiblacklist'
     ],
     plans: [
-      { name: '30 Dias', price: 29.99, discount: '-50%', url: '#', popular: true }
+      { name: '1 Dia', price: 19.99, discount: '-85%', url: '#' },
+      { name: '7 Dias', price: 29.99, discount: '-75%', url: '#' },
+      { name: '30 Dias', price: 49.99, discount: '-65%', url: '#', popular: true }
     ]
   }
 ];
