@@ -269,6 +269,25 @@ const PRODUCTS: Product[] = [
     plans: [
       { name: 'Permanente', price: 32.90, discount: '-40%', url: '#', popular: true }
     ]
+  },
+  {
+    id: '11',
+    name: 'PAINEL FLUORITE',
+    description: 'Painel exclusivo para iOS com recursos avançados e máxima performance.',
+    longDescription: 'O PAINEL FLUORITE oferece uma solução completa para iPhone, com recursos avançados de Aimbot e ESP, garantindo a máxima performance e segurança.',
+    price: 29.99,
+    image: externalImage,
+    category: 'IOS',
+    tag: 'NOVO',
+    features: [
+      'Aimbot 100% e Aimbot Neck',
+      'ESP Linha, caixa, vida e nome',
+      'Calibração avançada',
+      '100% Antiban e Antiblacklist'
+    ],
+    plans: [
+      { name: '30 Dias', price: 29.99, discount: '-50%', url: '#', popular: true }
+    ]
   }
 ];
 
