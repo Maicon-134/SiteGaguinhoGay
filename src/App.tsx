@@ -56,6 +56,7 @@ const externalYoutubeVideoUrl = 'https://www.youtube.com/embed/lBYpZNKDgyw?contr
 const emulatorYoutubeVideoUrl = 'https://www.youtube.com/embed/KvIZW1ApwtY?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const ffh4xIphoneYoutubeVideoUrl = 'https://www.youtube.com/embed/-wOoJMLEGcY?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 const hsProxyAndroidYoutubeVideoUrl = 'https://www.youtube.com/embed/k7bj73eF6DM?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
+const injetorXitYoutubeVideoUrl = 'https://www.youtube.com/embed/J_s6y68YRic?controls=1&disablekb=0&modestbranding=1&rel=0&autoplay=0&mute=0&playsinline=1&iv_load_policy=3&vq=hd1080';
 
 // --- Types ---
 
@@ -215,6 +216,8 @@ const PRODUCTS: Product[] = [
     longDescription: 'O INJETOR DE XIT para Android permite injetar modificações de forma prática e segura, com suporte contínuo e atualizações frequentes.',
     price: 32.90,
     image: injetorXitImage,
+    videoUrl: injetorXitYoutubeVideoUrl,
+    videoWatchUrl: 'https://www.youtube.com/watch?v=J_s6y68YRic',
     category: 'ANDROID',
     tag: 'NOVO',
     features: [
@@ -237,6 +240,8 @@ const PRODUCTS: Product[] = [
     longDescription: 'O INJETOR DE XIT para iOS oferece uma solução prática para injetar modificações no iPhone, com processo simplificado e suporte completo.',
     price: 32.90,
     image: injetorXitImage,
+    videoUrl: injetorXitYoutubeVideoUrl,
+    videoWatchUrl: 'https://www.youtube.com/watch?v=J_s6y68YRic',
     category: 'IOS',
     tag: 'NOVO',
     features: [
