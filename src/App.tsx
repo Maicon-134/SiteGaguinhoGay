@@ -814,29 +814,24 @@ const HomePage = () => (
     <Features />
     
     {/* Stats Section */}
-    <section className="py-8 bg-purple-600">
+    <section className="py-8 bg-red-600">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 text-center">
+        <div className="grid grid-cols-2 gap-y-8 gap-x-4 text-center">
           <div>
             <div className="text-4xl md:text-5xl font-black text-white mb-1">10k+</div>
-            <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">Clientes Satisfeitos</div>
+            <div className="text-white text-[10px] md:text-xs font-bold uppercase tracking-widest">Clientes Satisfeitos</div>
           </div>
           <div>
             <div className="text-4xl md:text-5xl font-black text-white mb-1">100%</div>
-            <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">Seguro & Anti-Ban</div>
+            <div className="text-white text-[10px] md:text-xs font-bold uppercase tracking-widest">Seguro & Anti-Ban</div>
           </div>
           <div>
-            <div className="text-sm md:text-lg font-black text-white mb-1 leading-tight">
-              24 horas<br />
-              por dia, 7<br />
-              dias por<br />
-              semana.
-            </div>
-            <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">ONLINE</div>
+            <div className="text-4xl md:text-5xl font-black text-white mb-1">24/H</div>
+            <div className="text-white text-[10px] md:text-xs font-bold uppercase tracking-widest">Suporte Online</div>
           </div>
           <div>
             <div className="text-4xl md:text-5xl font-black text-white mb-1">5★</div>
-            <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">Avaliação Média</div>
+            <div className="text-white text-[10px] md:text-xs font-bold uppercase tracking-widest">Avaliação Média</div>
           </div>
         </div>
       </div>
