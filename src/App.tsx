@@ -492,6 +492,8 @@ const Header = () => {
 };
 
 const Hero = () => {
+  const [videoStarted, setVideoStarted] = useState(false);
+
   return (
     <section className="relative pt-30 pb-10 md:pt-44 md:pb-18 overflow-hidden min-h-[52vh] md:min-h-[76vh] flex items-center">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-5 pointer-events-none">
@@ -507,19 +509,32 @@ const Hero = () => {
           <div className="flex justify-center mb-6">
             <div className="bg-purple-600/20 backdrop-blur-md border border-purple-600/30 px-4 py-2 rounded-full flex items-center gap-2">
               <ShieldCheck size={16} className="text-purple-600" />
-              <span className="text-[10px] font-black text-white uppercase tracking-widest">Apresentação Oficial da Loja</span>
+              <span className="text-[10px] font-black text-white uppercase tracking-widest">INICIO</span>
             </div>
           </div>
           
-          <div className="max-w-[91vw] mx-auto rounded-2xl md:rounded-[40px] overflow-hidden border border-white/10 shadow-2xl shadow-purple-600/30 aspect-video bg-black/40 backdrop-blur-sm relative">
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src={heroYoutubeVideoUrl}
-              title="Vídeo de Apresentação"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="max-w-[91vw] mx-auto rounded-2xl md:rounded-[40px] overflow-hidden border border-white/10 shadow-2xl shadow-purple-600/30 aspect-video bg-zinc-900 relative">
+            {videoStarted ? (
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src={`${heroYoutubeVideoUrl}&autoplay=1`}
+                title="Vídeo de Apresentação"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <button
+                type="button"
+                onClick={() => setVideoStarted(true)}
+                className="absolute inset-0 w-full h-full flex items-center justify-center cursor-pointer"
+                aria-label="Iniciar vídeo de apresentação"
+              >
+                <span className="text-3xl md:text-6xl font-black text-white uppercase tracking-tight">
+                  INICIO
+                </span>
+              </button>
+            )}
           </div>
         </motion.div>
       </div>
