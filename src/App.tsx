@@ -826,8 +826,13 @@ const HomePage = () => (
             <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">Seguro & Anti-Ban</div>
           </div>
           <div>
-            <div className="text-4xl md:text-5xl font-black text-white mb-1">24/H</div>
-            <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">Suporte Online</div>
+            <div className="text-sm md:text-lg font-black text-white mb-1 leading-tight">
+              24 horas<br />
+              por dia, 7<br />
+              dias por<br />
+              semana.
+            </div>
+            <div className="text-white/80 text-[10px] md:text-xs font-bold uppercase tracking-widest">ONLINE</div>
           </div>
           <div>
             <div className="text-4xl md:text-5xl font-black text-white mb-1">5★</div>
