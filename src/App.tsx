@@ -531,7 +531,7 @@ const Features = () => {
   const features = [
     { icon: <ShieldCheck size={32} />, title: '100% SEGURO', desc: 'Sistema anti-ban de última geração para sua total segurança.' },
     { icon: <Zap size={32} />, title: 'ENTREGA INSTANTÂNEA', desc: 'Receba seus dados de acesso imediatamente após a compra.' },
-    { icon: <Clock size={32} />, title: 'SUPORTE 24/H', desc: 'Equipe pronta para te ajudar a qualquer hora do dia ou da noite.' },
+    { icon: <Clock size={32} />, title: '24/H', desc: 'Suporte Online' },
     { icon: <RefreshCw size={32} />, title: 'ATUALIZAÇÕES GRÁTIS', desc: 'Mantenha-se sempre atualizado com as novas versões do jogo.' }
   ];
 
