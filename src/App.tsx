@@ -449,7 +449,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/" onClick={handleHomeClick} className="text-sm font-medium text-white/70 hover:text-white transition-colors">Início</Link>
+          <Link to="/" onClick={handleHomeClick} className="text-sm font-medium text-white/70 hover:text-white transition-colors">ÍNICIO</Link>
           <a href="/#produtos" className="text-sm font-medium text-white/70 hover:text-white transition-colors">Produtos</a>
           <a href="/#vantagens" className="text-sm font-medium text-white/70 hover:text-white transition-colors">Vantagens</a>
           <a href="/#faq" className="text-sm font-medium text-white/70 hover:text-white transition-colors">Dúvidas</a>
@@ -470,7 +470,7 @@ const Navbar = () => {
             className="md:hidden bg-zinc-900 border-b border-white/10 overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-2">
-              <Link to="/" className="text-lg font-black text-white hover:text-purple-600 p-3 rounded-xl hover:bg-white/5 transition-all uppercase tracking-tight" onClick={handleHomeClick}>Início</Link>
+              <Link to="/" className="text-lg font-black text-white hover:text-purple-600 p-3 rounded-xl hover:bg-white/5 transition-all uppercase tracking-tight" onClick={handleHomeClick}>ÍNICIO</Link>
               <a href="/#produtos" className="text-lg font-black text-white hover:text-purple-600 p-3 rounded-xl hover:bg-white/5 transition-all uppercase tracking-tight" onClick={() => setIsMobileMenuOpen(false)}>Produtos</a>
               <a href="/#vantagens" className="text-lg font-black text-white hover:text-purple-600 p-3 rounded-xl hover:bg-white/5 transition-all uppercase tracking-tight" onClick={() => setIsMobileMenuOpen(false)}>Vantagens</a>
               <a href="/#faq" className="text-lg font-black text-white hover:text-purple-600 p-3 rounded-xl hover:bg-white/5 transition-all uppercase tracking-tight" onClick={() => setIsMobileMenuOpen(false)}>Dúvidas</a>
